@@ -1,10 +1,8 @@
 # About the repository
 This little snippet is a basis for scanning for specific data through a webpage, recording, printing and reuse.
 
+The webpage example on which it is based is : https://www.balenciaga.com/en-us/women/shoes/sneakers.
 
-# About the exercise
-
-The webpage example on which is based the snippet is : https://www.balenciaga.com/en-us/women/shoes/sneakers.
 Data to retrieve are the name and the price of each product card being displayed, once only, on first appearance.
 
 
@@ -23,9 +21,9 @@ prodcut_price = CSS classed 'c-product__price' elements;
 
 # Technical tasks & tools
 
-- Find specific information through the web page, to be read and recorded ; using **DOM Manipulation**.
-- Detect when specific data are being __actually read__ by the user, e.g. __visible on screen__ ; using **Intersection Observer API** (not the old JS method .getBoundingClientRect).
-- Record and print to the console these specific once upon first appearance on screen ; using **Memoïzation**.
+- Find specific information through the web page, to be read and recorded, **DOM Manipulation**.
+- Detect when specific data are being __actually read__ by the user, e.g. __visible on screen__ , **Intersection Observer API** (not the old JS method .getBoundingClientRect).
+- Record and print to the console these specific once upon first appearance on screen, **Memoïzation**.
 
 
 # Assumptions and personal understandings
@@ -41,4 +39,5 @@ prodcut_price = CSS classed 'c-product__price' elements;
 
 # Questions and suggestions
 Please contact by mail (see my profile).
-Thanks for your attention !# webpage-reader
+
+Thanks for your attention !
