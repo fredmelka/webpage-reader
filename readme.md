@@ -15,8 +15,11 @@ Data to retrieve are the name and the price of each product card being displayed
 > Si l'utilisateur ré-affiche des produits déjà poussés dans la console, aucune information ne doit être renvoyée.
 
 HTML markers being tracked on this website:
+
 product_item = CSS classed 'c-product__item' elements;
+
 product_name = CSS classed 'c-product__name' elements;
+
 prodcut_price = CSS classed 'c-product__price' elements;
 
 # Technical tasks & tools
