@@ -16,16 +16,16 @@ const observerCallback = (entries, observer) => {
 	entries.forEach(entry => {if (entry.isIntersecting) {addToWatchList(entry.target);};});
 };
 
-const isVisible = (target) => {
+const observeItem = (target) => {
 	let observer = new IntersectionObserver(observerCallback, options);
 	observer.observe(target);
 };
 
-const observeItems = () => {
-	let loadedItems = document.querySelectorAll('.c-product__item');
-	if (loadedItems.length == observedItems) {return;};
-	for (i = observedItems ; i < loadedItems.length ; i++) {isVisible(loadedItems[i]);};
-	observedItems = loadedItems.length;
+const trackUser = () => {
+	let lazyLoadedItems = document.querySelectorAll('.c-product__item');
+	if (lazyLoadedItems.length == observedItems) {return;};
+	for (i = observedItems ; i < lazyLoadedItems.length ; i++) {observeItem(lazyLoadedItems[i]);};
+	observedItems = lazyLoadedItems.length;
 }; 
 
-document.onscroll = observeItems;
+document.onscroll = trackUser;
