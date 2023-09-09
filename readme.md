@@ -1,5 +1,5 @@
 # About the repository
-This little snippet is a codebase for scanning for specific data through a webpage, recording it, and printing and reusing.
+This little snippet is a codebase for scanning for specific data through a webpage, recording and reusing.
 
 The webpage example on which it is based is : https://www.balenciaga.com/en-us/women/shoes/sneakers.
 
@@ -38,6 +38,4 @@ prodcut_price = CSS classed 'c-product__price' elements;
 
 
 # Questions and suggestions
-Please contact by mail (see my profile).
-
-Thanks for your attention !
+Please contact by mail (see my profile). Thanks for your attention !
