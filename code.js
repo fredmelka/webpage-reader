@@ -19,7 +19,7 @@ const observeItem = (target) => {
 const trackUser = () => {
 	let lazyLoadedItems = document.querySelectorAll('.c-product__item');
 	if (lazyLoadedItems.length == observedItems) {return;};
-	for (i = observedItems ; i < lazyLoadedItems.length ; i++) {observeItem(lazyLoadedItems[i]);};
+	for (let i = observedItems ; i < lazyLoadedItems.length ; i++) {observeItem(lazyLoadedItems[i]);};
 	observedItems = lazyLoadedItems.length;}; 
 
 document.onscroll = trackUser;

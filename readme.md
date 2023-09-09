@@ -16,22 +16,20 @@ Data to retrieve are the name and the price of each product card being displayed
 
 HTML markers being tracked on this website:
 
-product_item = CSS classed 'c-product__item' elements;
+product_Item = CSS classed 'c-product__item' elements;
 
-product_name = CSS classed 'c-product__name' elements;
+product_Name = CSS classed 'c-product__name' elements;
 
-prodcut_price = CSS classed 'c-product__price' elements;
+prodcut_Price = CSS classed 'c-product__price' elements;
 
 
 ## Technical tasks & tools
-
 - Find specific information through the web page, to be read and recorded, **DOM Manipulation**.
 - Detect when specific data are being __actually read__ by the user, e.g. __visible on screen__ , **Intersection Observer API** (not the old JS method .getBoundingClientRect).
 - Record and print to the console these specific once upon first appearance on screen, **Memoïzation**.
 
 
 ## Assumptions and personal understandings
-
 * A product item ('card') is set by its name and its price. There are apparently on this e-commerce website no other written property defining each item.
 * Multiples cards display a same shoe product with an identical name and identical price. Hence, it will only be recorded once and pushed once to the console. Actually, this is consistent and logic since the manufacturer commonly markets a same one product several times under different cards but just with a different picture (e.g. colour variation) that are not reflecting any specific product difference nor any SKU different reference.
 * The focus remains all the time on the browser and not on other apps on the desktop.
