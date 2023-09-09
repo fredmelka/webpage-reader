@@ -41,5 +41,5 @@ prodcut_price = CSS classed 'c-product__price' elements;
 * Developed and tested under Chrome Version 115.0.5790.110.
 
 
-## Questions and suggestions
-Please contact by mail (see github profile). Thanks for your attention !
+## Questions or suggestions
+Please contact by mail (see github profile). Thanks for your attention!
