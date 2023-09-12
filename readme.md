@@ -1,9 +1,9 @@
 ## About the repository
 This little snippet is a codebase for scanning for specific data through a webpage, recording and reusing.
 
-The webpage example on which it is based is : https://www.balenciaga.com/en-us/women/shoes/sneakers.
+The site on which it is made an example is : https://www.balenciaga.com/en-us/women/shoes/sneakers.
 
-Data to retrieve are the name and the price of each product card being displayed, once only, on first appearance.
+For instance, data to retrieve are name and price of each product card being displayed, once only, at first appearance.
 
 
 ##### _> consignes en Français_
@@ -35,7 +35,7 @@ prodcut_Price = CSS classed 'c-product__price' elements;
 * The focus remains all the time on the browser and not on other apps on the desktop.
 * The threshold for triggering the reading of a product card is being set to 100%, meaning that the entire item card has to appear on the screen before it is recorded and printed. It is possible to change this parameter (from 0 to 1) and to set a different activation level: eg. 50% equivalent to the picture size, or 80%, or 5%, etc.
 * The code will push to the console a one-liner for any new item appearing on screen and will then print again the list of all items as a table of key/value pairs : { Name: Price }.
-* The code should work properly both ways: either by executing immediately the code and scrolling the page from top to bottom, or by activating the snippet after some shoe products have been loaded on the page and scrolling upwards.
+* The code should work properly both ways: either by executing immediately the code and then scrolling the page from top to bottom, or by activating the snippet after some shoe products have been loaded on the page and then scrolling any direction.
 * Developed and tested under Chrome Version 115.0.5790.110.
 
 

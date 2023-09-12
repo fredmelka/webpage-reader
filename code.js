@@ -6,7 +6,7 @@ const addToWatchList = (item) => {
 	let price = item.querySelector('.c-product__price').innerText;
 	if (name in watchList) {return;};
 	watchList[name] = price;
-	console.log(`New Item ${name} with price of ${price} added to the list!`);
+	console.log(`New Item ${name} with a price of ${price} added to the list!`);
 	console.table(watchList);};
 
 const observerCallback = (entries, observer) => {
