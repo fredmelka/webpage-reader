@@ -1,43 +1,43 @@
-## About the repository
-This little snippet is a codebase for scanning for specific data through a webpage, recording and reusing.
+### Page reader
 
-The site on which it is made an example is : https://www.balenciaga.com/en-us/women/shoes/sneakers.
+This little repository is about scanning for specific data through a webpage, recording and reusing infos.
 
-For instance, data to retrieve are name and price of each product card being displayed, once only, at first appearance.
+The site which served as example is a [Balenciaga](https://www.balenciaga.com/en-us/women/shoes/sneakers) shoes showcase. For instance, data to retrieve are the _name_ and the _price_ of each product _card_ being displayed, once only, at first appearance.
 
+**Assignment** (_french_)
 
-##### _> consignes en Français_
 > Chargez la page https://www.balenciaga.com/en-us/women/shoes/sneakers dans votre navigateur.
 > Cette page est composée de vignettes d'articles que l'on peut parcourir en faisant défiler la page.
-> L’objectif de l'exercice est d'écrire un snippet de code Javascript (si possible en JS natif).
+> L’objectif de l'exercice est d'écrire un snippet de code Javascript (si possible en JavaScript natif).
 > Une fois copié/collé dans la console, après le chargement de la page, ce snippet doit afficher dans la console le nom et le prix des articles affichés, et seulement ceux-ci.
 > Si l'utilisateur fait défiler la page, avec la souris ou la barre de navigation latérale, le code doit automatiquement pousser dans la console les informations des nouveaux produits affichés.
 > Si l'utilisateur ré-affiche des produits déjà poussés dans la console, aucune information ne doit être renvoyée.
 
 HTML markers being tracked on this website:
 
-product_Item = CSS classed 'c-product__item' elements;
+- Item $\to$ CSS class `c-product__item` attached elements
+- Name $\to$ CSS class `c-product__name` attached elements
+- Price $\to$ CSS class `c-product__price` elements
 
-product_Name = CSS classed 'c-product__name' elements;
+### Tasks & programming tools
 
-prodcut_Price = CSS classed 'c-product__price' elements;
-
-
-## Technical tasks & tools
 - Find specific information through the web page, to be read and recorded, **DOM Manipulation**.
-- Detect when specific data are being __actually read__ by the user, e.g. __visible on screen__ , **Intersection Observer API** (not the old JS method .getBoundingClientRect).
-- Record and print to the console these specific once upon first appearance on screen, **Memoïzation**.
+- Detect when specific data are being _actually read_ by the user, e.g. _visible on screen_, **Intersection Observer API** (not the old JavaScript built-in method _.getBoundingClientRect()_).
+- Record and print to the console these information once upon first appearance on screen, **Memoïzation**.
 
+### Assumptions and personal understandings
 
-## Assumptions and personal understandings
-* A product item ('card') is set by its name and its price. There are apparently on this e-commerce website no other written property defining each item.
-* Multiples cards display a same shoe product with an identical name and identical price. Hence, it will only be recorded once and pushed once to the console. Actually, this is consistent and logic since the manufacturer commonly markets a same one product several times under different cards but just with a different picture (e.g. colour variation) that are not reflecting any specific product difference nor any SKU different reference.
-* The focus remains all the time on the browser and not on other apps on the desktop.
-* The threshold for triggering the reading of a product card is being set to 100%, meaning that the entire item card has to appear on the screen before it is recorded and printed. It is possible to change this parameter (from 0 to 1) and to set a different activation level: eg. 50% equivalent to the picture size, or 80%, or 5%, etc.
-* The code will push to the console a one-liner for any new item appearing on screen and will then print again the list of all items as a table of key/value pairs : { Name: Price }.
-* The code should work properly both ways: either by executing immediately the code and then scrolling the page from top to bottom, or by activating the snippet after some shoe products have been loaded on the page and then scrolling any direction.
-* Developed and tested under Chrome Version 115.0.5790.110.
+A product _card_ is set by its name and its price. There are apparently on this website no other property defining each item.
 
+On the page, multiple cards display a same shoe product with an identical name and identical price. Hence, it will only be recorded once and pushed once to the console. Actually, this is consistent since the manufacturer commonly markets a same one product several times under different cards, but with a different picture (e.g. colour variation), that are not reflecting any specific product difference, nor any SKU different reference.
 
-## Questions or suggestions
-Please contact by mail (see github profile). Thanks for your attention!
+The focus remains all the time on the browser, not on any other apps on the desktop.
+
+The threshold for triggering the reading of a _card_ is being set to $1$, meaning that the entire item card has to appear on the screen before it is recorded and printed. It is possible to change this parameter (from $0$ to $1$) and to set a different activation level: e.g. $0.5$ equivalent to half the picture displayed, or $0.8$, or $0.5$, etc.
+
+The code will push to the console a one-liner for any new item appearing on screen and will then print again the list of all items as a table of key/value pairs: `{ Name: Price }`.
+
+The code should work properly both ways. Either by executing immediately the code and then scrolling from top to bottom, or by executing the code after some shoe products have been loaded on the page and then scrolling any direction.
+
+Developed and tested under Chrome version 115.0.5790.110.
+<hr/>

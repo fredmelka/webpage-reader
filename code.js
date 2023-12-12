@@ -1,4 +1,4 @@
-
+// Codebase
 const watchList = {}; let observedItems = 0; const options = {root: null, threshold: 1};
 
 const addToWatchList = (item) => {
